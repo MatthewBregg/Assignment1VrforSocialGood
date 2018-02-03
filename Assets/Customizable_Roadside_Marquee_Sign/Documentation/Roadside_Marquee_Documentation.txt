@@ -1,0 +1,34 @@
+Roadside Marquee Documentation
+---------------------------------
+
+Thank you for purchasing my Roadside Marquee model!  This is my second paid asset submission to the Unity Asset Store, and as such, your feedback is vastly appreciated.  If you have any issues, suggestions, or questions regarding this model, please do not hesitate to contact me at dustin_bogers@hotmail.com .
+
+The intent of this asset is to allow you to create a roadside sign with a customized message.  If you like what I've done, please consider checking out some of my other works on the Unity Asset Store.
+
+
+What is Included
+----------------
+
+This pack includes the roadside marquee model, several materials for creating optional color schemes, animation files that allow the marquee lights to flash, plus 4 'Level of Detail' models, which can be used if your game requires a lower polygon count.  Prefabs have been made to cover the various combinations of color schemes and LOD models.  In total, there are 3 animation files, 17 materials, 5 models, 2 scenes, 17 textures, and 30 prefabs.
+
+
+How To Use This Pack
+--------------------
+
+The prefabs included in this pack work like you would expect, as you can simply drag them into your scene and place them as you wish.  Most of the models are accompanied by LOD (Level of Detail) versions that have a lowered polycount for devs who have a polygon budget.  The higher the LOD number, the more simplified the model becomes.  Prefabs have been provided for each LOD model.  Please note that the lettering used on marquee will add 12 triangles per letter added.  The base triangle count for each model is as follows:
+
+Model			| Original 	| LOD1 		| LOD2		| LOD3		| LOD4
+-------------------------------------------------------------------------------------------------
+Roadside Marquee	| 53908		| 25976		| 9610		| 1464		| 388
+
+
+Each prefab comes set up with an animation that will make the marquee lights flash on and off when the scene is played.  If you would like the lights to remain off, simply disable the animation.  If you would prefer the lights to remain on without flashing, set the 'intensity' of each 'arrowhead' and 'arrowbody' light in the prefab to 2.81, and apply the 'marquee_sign_lit' material to all of the mesh labeled 'light01' to 'light14'.
+
+Each prefab also includes a set of letters on each side of the sign, colored black by default.  In order to spell out the message you want, simply duplicate and re-arrange the letters/numbers/symbols you need on the x and y axis.  For added realism and/or quirkiness, try off-setting or rotating some letters to simulate hand-typesetting errors.  You may also wish to change the color of the letters to one of the other four included colors (look for the materials beginning with the prefix 'lettering_').  When you're finished customizing both sides of the sign, just de-activate or delete the unused letters.  For additional variations, try deleting the 'stand' mesh and attaching the sign to the side of a building, or removing the arrow and lights for a more simplified sign.  Hopefully, this range of options should allow you to use and re-use this asset in many different ways.
+
+
+
+Conclusion
+-----------
+Once again, if you have any trouble or questions about this asset, do not hesitate to contact me at dustin_bogers@hotmail.com
+Have fun!
