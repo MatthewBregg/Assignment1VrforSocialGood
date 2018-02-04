@@ -1158,8 +1158,6 @@ GameObject:
   - component: {fileID: 65245130616148580}
   - component: {fileID: 23424013368315698}
   - component: {fileID: 114440986949024508}
-  - component: {fileID: 114374912837384086}
-  - component: {fileID: 114943891992302692}
   m_Layer: 0
   m_Name: collider box
   m_TagString: Untagged
@@ -9983,17 +9981,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114374912837384086
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1422451351935014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d6ec5cd1b685064b945e1a81bcbe893, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114440986949024508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10003,16 +9990,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 020bd404f03412943989f8fb0e6fc4e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114943891992302692
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1422451351935014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6866e5b346df99b4e9f7ca472cbcc0cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
