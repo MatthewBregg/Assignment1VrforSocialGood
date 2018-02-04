@@ -1,0 +1,15 @@
+Plans
+
+Today
+
+Finish all trash prefabs
+
+Tommorrow
+
+Write code that shrinks/grows trash based on data
+
+Find data, hook in data
+
+Monday - Thurs over flow, bug fixes, demo, any minor improvements, make growing/shrinking nicer ooking.
+
+Then done.
