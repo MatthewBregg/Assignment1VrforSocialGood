@@ -4,6 +4,8 @@ Today
 
 Finish all trash prefabs
 
+Need plstic, metal, and utensils.
+
 Tommorrow
 
 Write code that shrinks/grows trash based on data
@@ -13,3 +15,5 @@ Find data, hook in data
 Monday - Thurs over flow, bug fixes, demo, any minor improvements, make growing/shrinking nicer ooking.
 
 Then done.
+
+Ideally for some like metal and such, increase the barrel count instead of just increasing the size!
