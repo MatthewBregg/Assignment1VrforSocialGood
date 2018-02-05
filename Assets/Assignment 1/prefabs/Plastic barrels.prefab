@@ -164,6 +164,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4759202284192736}
+  - component: {fileID: 65814789394128124}
+  - component: {fileID: 114163751246411852}
   m_Layer: 0
   m_Name: Plastic barrels
   m_TagString: Untagged
@@ -338,7 +340,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1290039685871958}
   m_LocalRotation: {x: -0.66552603, y: -0, z: -0, w: 0.74637467}
-  m_LocalPosition: {x: 1.742, y: -1.121, z: 0.404}
+  m_LocalPosition: {x: -0.48911917, y: -0.52155304, z: 0.30002093}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4759202284192736}
@@ -468,7 +470,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1165217961248708}
   m_LocalRotation: {x: -0.66552603, y: -0, z: -0, w: 0.74637467}
-  m_LocalPosition: {x: 2.7241192, y: -1.148447, z: -0.33902168}
+  m_LocalPosition: {x: 0.493, y: -0.549, z: -0.443}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4557392039712256}
@@ -485,7 +487,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1327434170026974}
   m_LocalRotation: {x: -0.66552603, y: -0, z: -0, w: 0.74637467}
-  m_LocalPosition: {x: 2.307, y: -1.129, z: 0.369}
+  m_LocalPosition: {x: 0.075880766, y: -0.52955294, z: 0.26502085}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4371894202230676}
@@ -514,8 +516,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1403611372980984}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.504295, y: 1.874, z: -26.151379}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.714, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4623545669408102}
@@ -532,7 +534,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1700378748693354}
   m_LocalRotation: {x: -0.66552603, y: -0, z: -0, w: 0.74637467}
-  m_LocalPosition: {x: 1.8745031, y: -1.139, z: -0.31518745}
+  m_LocalPosition: {x: -0.35661602, y: -0.53955305, z: -0.41916656}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4987177972340416}
@@ -1125,7 +1127,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0015, y: -0.27, z: 0.709}
+  m_ConnectedAnchor: {x: 0.0015003681, y: -0.27000064, z: 0.709}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1159,7 +1161,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0433, y: 0.24807, z: 0.52061}
+  m_ConnectedAnchor: {x: -0.043299675, y: 0.24807051, z: 0.5206099}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1193,7 +1195,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.27, z: 0.4989}
+  m_ConnectedAnchor: {x: 0.000000029802322, y: -0.27000028, z: 0.4989}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1227,7 +1229,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.049, y: -0.24807, z: 0.52061}
+  m_ConnectedAnchor: {x: -0.048999786, y: -0.24806952, z: 0.52061}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1261,7 +1263,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.27, z: 0.4989}
+  m_ConnectedAnchor: {x: 0.000000029802322, y: 0.26999983, z: 0.49889997}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1295,7 +1297,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0015, y: 0.27, z: 0.709}
+  m_ConnectedAnchor: {x: 0.0015003681, y: 0.2699995, z: 0.7090001}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -1327,7 +1329,7 @@ MeshCollider:
   m_GameObject: {fileID: 1586512281767438}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -1341,7 +1343,7 @@ MeshCollider:
   m_GameObject: {fileID: 1410648171385102}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -1355,7 +1357,7 @@ MeshCollider:
   m_GameObject: {fileID: 1888250338898590}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -1369,7 +1371,7 @@ MeshCollider:
   m_GameObject: {fileID: 1174853154740190}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -1383,7 +1385,7 @@ MeshCollider:
   m_GameObject: {fileID: 1227535569370008}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -1397,7 +1399,7 @@ MeshCollider:
   m_GameObject: {fileID: 1416309266452728}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -1475,6 +1477,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5044451, y: 0.8577272, z: 0.66825193}
   m_Center: {x: -0.0035569696, y: -0.0711363, z: 0.02132616}
+--- !u!65 &65814789394128124
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1403611372980984}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65844157666561990
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1523,3 +1537,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4251858, y: 0.4187263, z: 0.58457196}
   m_Center: {x: 0.000000014901161, y: 0, z: 0.29228586}
+--- !u!114 &114163751246411852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1403611372980984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc7b520fa18b54a4fac6caf58f9cbab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleToSize: 1
+  smoothing: 1
+  adjustYMovementScale: 1
