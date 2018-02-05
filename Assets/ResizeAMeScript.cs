@@ -7,12 +7,6 @@ public class ResizeAMeScript : MonoBehaviour {
     public float scaleToSize = 1.5f;
 
     private bool isCurrentlyScaling = true;
-    private Vector3 sizeOfObject;
-
-    void Start () {
-        sizeOfObject = GetComponent<Collider>().bounds.size;
-
-    }
 	
     public float smoothing = 1f;
 
@@ -26,7 +20,7 @@ public class ResizeAMeScript : MonoBehaviour {
 
         float changeInYScale = (transform.localScale - formerScale).y;
         changeInYScale *= adjustYMovementScale;
-        float nessecaryChangeInHeight = changeInYScale * sizeOfObject.y;
+        float nessecaryChangeInHeight = changeInYScale;
 
         Vector3 newPosition = transform.position;
         newPosition.y += nessecaryChangeInHeight;

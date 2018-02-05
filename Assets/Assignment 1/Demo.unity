@@ -10337,11 +10337,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1252444170}
   m_Mesh: {fileID: 4300000, guid: c36172a086fe4d446949d692c095e696, type: 3}
+--- !u!1 &1261127179 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1403611372980984, guid: c0758a63bf3187248b1be9b880bae42c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1992137311}
 --- !u!4 &1261127180 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4759202284192736, guid: c0758a63bf3187248b1be9b880bae42c,
     type: 2}
   m_PrefabInternal: {fileID: 1992137311}
+--- !u!114 &1261127181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1261127179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc7b520fa18b54a4fac6caf58f9cbab5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleToSize: 1.5
+  smoothing: 1
+  adjustYMovementScale: 1
 --- !u!1 &1270334226
 GameObject:
   m_ObjectHideFlags: 0
@@ -16063,7 +16082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleToSize: 1
   smoothing: 2
-  adjustYMovementScale: 0.2
+  adjustYMovementScale: 0.6378652
 --- !u!1 &2023652255
 GameObject:
   m_ObjectHideFlags: 0
@@ -16364,6 +16383,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 434558, guid: 23a060e1bf9158541a31375c6cfe52db, type: 2}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114628, guid: 23a060e1bf9158541a31375c6cfe52db, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
