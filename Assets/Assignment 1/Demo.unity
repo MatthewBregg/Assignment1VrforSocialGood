@@ -5202,11 +5202,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTimeIntervalHolder: {fileID: 2056127536}
-  standardUnitOfPlasticScale: 0.16
-  standardUnitOfMetalScale: 0.08
-  standardUnitOfFoodScale: 0.8
-  standardUnitOfWoodScale: 0.08
-  standardUnitOfGenericScale: 0.13
+  standardUnitOfPlasticVol: 0.16
+  standardUnitOfMetalVol: 0.08
+  standardUnitOfFoodVol: 0.8
+  standardUnitOfWoodVol: 0.08
+  standardUnitOfGenericVol: 0.13
   metalResizer: {fileID: 1596459756}
   plasticResizer: {fileID: 349203913}
   foodResizer: {fileID: 386408178}

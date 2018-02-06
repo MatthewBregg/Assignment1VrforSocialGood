@@ -21,23 +21,46 @@ public class OverallPileSizeManager : MonoBehaviour {
 		
 	}
 
+    private float Cube(float input) {
+        return input * input * input;
+    }
+    private float CubeRoot(float input) {
+        return Mathf.Pow(input, 1f / 3.33333333f);
+    }
 
+    private float GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(float SSScale, float multiplier) {
+        return CubeRoot((Cube(SSScale) * multiplier));
+    }
     private void FixedUpdate() {
         float timeMultiplier = GetTimeMultiplier();
-        metalResizer.scaleToSize = timeMultiplier * standardUnitOfMetalScale;
-        plasticResizer.scaleToSize = timeMultiplier * standardUnitOfPlasticScale;
-        woodResizer.scaleToSize = timeMultiplier * standardUnitOfWoodScale;
-        foodResizer.scaleToSize = timeMultiplier * standardUnitOfFoodScale;
-        genericTrashResizer.scaleToSize = timeMultiplier * standardUnitOfGenericScale;
+
+        float metalMultiplier = timeMultiplier;
+        float plasticMultiplier = timeMultiplier;
+        float woodMultiplier = timeMultiplier;
+        float foodMultiplier = timeMultiplier;
+   
+        float genericGarbageMultiplier = timeMultiplier;
+
+
+        // Find the current cubic volume, increase that volume by however much we want, and then calculate our new scale factor to acheive that volume.
+        genericTrashResizer.scaleToSize = GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(standardUnitOfGenericVol, genericGarbageMultiplier);
+
+        metalResizer.scaleToSize = GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(standardUnitOfMetalVol, metalMultiplier);
+        plasticResizer.scaleToSize = GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(standardUnitOfPlasticVol, plasticMultiplier);
+        woodResizer.scaleToSize = GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(standardUnitOfWoodVol, woodMultiplier);
+        foodResizer.scaleToSize = GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(standardUnitOfFoodVol, foodMultiplier);
+
         
+
+
     }
     // StandardUnit = 4.5 poudns of the stuff, this is what scale the item should be set to to represent a pile that weighs that much. 
-    public float standardUnitOfPlasticScale;
-    public float standardUnitOfMetalScale;
-    public float standardUnitOfFoodScale;
-    public float standardUnitOfWoodScale;
+    public float standardUnitOfPlasticVol;
+    public float standardUnitOfMetalVol;
+    public float standardUnitOfFoodVol;
+    public float standardUnitOfWoodVol;
 
-    public float standardUnitOfGenericScale;
+    public float standardUnitOfGenericVol;
 
     public ResizeAMeScript metalResizer;
     public ResizeAMeScript plasticResizer;
