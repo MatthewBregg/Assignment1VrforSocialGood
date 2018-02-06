@@ -22,18 +22,13 @@ public class EnterTriggerChangeTimeSettign : TriggerIfPlayerEntersAction {
                 break;
             case TimeIntervals.Month:
                 month.SetActive(false);
-                year.SetActive(true);
-                currentTimeInterval = TimeIntervals.Year;
+                day.SetActive(true);
+                currentTimeInterval = TimeIntervals.Day;
                 break;
             case TimeIntervals.Week:
                 week.SetActive(false);
                 month.SetActive(true);
                 currentTimeInterval = TimeIntervals.Month;
-                break;
-            case TimeIntervals.Year:
-                year.SetActive(false);
-                day.SetActive(true);
-                currentTimeInterval = TimeIntervals.Day;
                 break;
         }
     }

@@ -32,3 +32,11 @@ https://www.assetstore.unity3d.com/en/#!/content/5333
 Trash stats
 
 https://archive.epa.gov/epawaste/nonhaz/municipal/web/html/
+
+https://www.treehugger.com/environmental-policy/trash-numbers-startling-statistics-about-americans-and-their-garbage.html
+TLDR; 4.5 ibs per day per american.
+
+garbage weight to volume
+https://www.aqua-calc.com/calculate/volume-to-weight
+
+I will scale everything so the default starting scale will be what 4.5 pounds of it looks like.

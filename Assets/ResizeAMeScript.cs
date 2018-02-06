@@ -5,8 +5,6 @@ using UnityEngine;
 public class ResizeAMeScript : MonoBehaviour {
 
     public float scaleToSize = 1.5f;
-
-    private bool isCurrentlyScaling = true;
 	
     public float smoothing = 1f;
 
