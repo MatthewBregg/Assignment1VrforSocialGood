@@ -34,10 +34,11 @@ public class OverallPileSizeManager : MonoBehaviour {
     private void FixedUpdate() {
         float timeMultiplier = GetTimeMultiplier();
 
-        float metalMultiplier = timeMultiplier;
-        float plasticMultiplier = timeMultiplier;
-        float woodMultiplier = timeMultiplier;
-        float foodMultiplier = timeMultiplier;
+        float metalMultiplier = timeMultiplier * percentageTrashMetal;
+        float plasticMultiplier = timeMultiplier * percentageTrashPlastic;
+        float woodMultiplier = timeMultiplier * percentageTrashWood;
+        float foodMultiplier = timeMultiplier * percentageTrashFood;
+        float otherMultiplier = timeMultiplier * percentageTrashOther;
    
         float genericGarbageMultiplier = timeMultiplier;
 
@@ -49,6 +50,7 @@ public class OverallPileSizeManager : MonoBehaviour {
         plasticResizer.scaleToSize = GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(standardUnitOfPlasticVol, plasticMultiplier);
         woodResizer.scaleToSize = GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(standardUnitOfWoodVol, woodMultiplier);
         foodResizer.scaleToSize = GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(standardUnitOfFoodVol, foodMultiplier);
+        otherResizer.scaleToSize = GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(standardUnitOfOtherVol, otherMultiplier);
 
         
 
@@ -59,6 +61,13 @@ public class OverallPileSizeManager : MonoBehaviour {
     public float standardUnitOfMetalVol;
     public float standardUnitOfFoodVol;
     public float standardUnitOfWoodVol;
+    public float standardUnitOfOtherVol;
+
+    public float percentageTrashPlastic;
+    public float percentageTrashMetal;
+    public float percentageTrashFood;
+    public float percentageTrashWood;
+    public float percentageTrashOther;
 
     public float standardUnitOfGenericVol;
 
@@ -66,6 +75,7 @@ public class OverallPileSizeManager : MonoBehaviour {
     public ResizeAMeScript plasticResizer;
     public ResizeAMeScript foodResizer;
     public ResizeAMeScript woodResizer;
+    public ResizeAMeScript otherResizer;
 
     public ResizeAMeScript genericTrashResizer;
 
