@@ -42,6 +42,10 @@ public class OverallPileSizeManager : MonoBehaviour {
    
         float genericGarbageMultiplier = timeMultiplier;
 
+        if ( composting ) {
+            genericGarbageMultiplier *= (1.0f - percentageTrashFood); // We don't need to modify any aside generic, as we just remove the food pile othersise;
+        }
+
 
         // Find the current cubic volume, increase that volume by however much we want, and then calculate our new scale factor to acheive that volume.
         genericTrashResizer.scaleToSize = GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(standardUnitOfGenericVol, genericGarbageMultiplier);
@@ -78,6 +82,7 @@ public class OverallPileSizeManager : MonoBehaviour {
     public ResizeAMeScript otherResizer;
 
     public ResizeAMeScript genericTrashResizer;
+    public bool composting;
 
     private float GetTimeMultiplier() {
         TimeIntervals time = currentTimeIntervalHolder.currentTimeInterval;
