@@ -22,11 +22,11 @@ Ideally for some like metal and such, increase the barrel count instead of just 
 
 4.5 pounds per day break down
 
-14.6% = food
+14.6% = food. goes to 0 if composted. 
 
-Wood = 47% (paper, plants, and wood in general.)
-
-plastics = 12.8%
+Wood = 47% (paper, plants, and wood in general.) .00536 meters cubic = 4.5 pounds. 34.3 percent totally recycllable, of that 60 percent of that reduction is wood.
+Similar for the rest.
+plastics = 12.8% .002218 meters cubic = 4.5 pounds
 
 metal = 9.1%
 

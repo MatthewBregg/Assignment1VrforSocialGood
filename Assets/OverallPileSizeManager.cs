@@ -46,6 +46,20 @@ public class OverallPileSizeManager : MonoBehaviour {
             genericGarbageMultiplier *= (1.0f - percentageTrashFood); // We don't need to modify any aside generic, as we just remove the food pile othersise;
         }
 
+        if ( recycling ) {
+            // Note, we are treating composting as separate from recycling!!
+            // All the following recycling statistics come from here
+            // https://archive.epa.gov/epawaste/nonhaz/municipal/web/html/
+            genericGarbageMultiplier *= (1.0f - (.343f - percentageTrashFood)); // This is only recycling, not composting!! 
+
+           
+            woodMultiplier *= (1.0f - (.343f*.63f));
+            // We include composting in this figure because source data does, and we are only calculating how much wood is reduced, so that we aren't actually enavling composting in this instance has no effect.
+            metalMultiplier *= (1.0f - (.343f * .09f));
+            plasticMultiplier *= (1.0f - (.343f * .13f));
+            otherMultiplier *= (1.0f - (.343f * .17f));
+
+        }
 
         // Find the current cubic volume, increase that volume by however much we want, and then calculate our new scale factor to acheive that volume.
         genericTrashResizer.scaleToSize = GivenStandardUnitScaleAndDesiredMultiplierObtainNewScale(standardUnitOfGenericVol, genericGarbageMultiplier);
@@ -83,6 +97,7 @@ public class OverallPileSizeManager : MonoBehaviour {
 
     public ResizeAMeScript genericTrashResizer;
     public bool composting;
+    public bool recycling;
 
     private float GetTimeMultiplier() {
         TimeIntervals time = currentTimeIntervalHolder.currentTimeInterval;
