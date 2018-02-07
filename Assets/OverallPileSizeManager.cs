@@ -123,6 +123,8 @@ public class OverallPileSizeManager : MonoBehaviour {
                 return 30;
             case TimeIntervals.Year:
                 return 365;
+            case TimeIntervals.FiveYears:
+                return 365 * 5;
             default:
                 Debug.Assert(false);
                 return 0;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum TimeIntervals { Day, Month, Week, Year };
+public enum TimeIntervals { Day, Month, Week, Year, FiveYears };
 
 public class EnterTriggerChangeTimeSettign : TriggerIfPlayerEntersAction {
     // Set this to whatever default we choose, I'm going to go with day. 
@@ -12,6 +12,7 @@ public class EnterTriggerChangeTimeSettign : TriggerIfPlayerEntersAction {
     public GameObject day;
     public GameObject year;
     public GameObject month;
+    public GameObject fiveYear;
 
     public override void performEnterAction(Collider platform, Collider other) {
         switch (currentTimeInterval) {
@@ -32,6 +33,11 @@ public class EnterTriggerChangeTimeSettign : TriggerIfPlayerEntersAction {
                 break;
             case TimeIntervals.Year:
                 year.SetActive(false);
+                fiveYear.SetActive(true);
+                currentTimeInterval = TimeIntervals.FiveYears;
+                break;
+            case TimeIntervals.FiveYears:
+                fiveYear.SetActive(false);
                 day.SetActive(true);
                 currentTimeInterval = TimeIntervals.Day;
                 break;
