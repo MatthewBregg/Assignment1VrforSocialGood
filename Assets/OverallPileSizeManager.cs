@@ -46,17 +46,29 @@ public class OverallPileSizeManager : MonoBehaviour {
             genericGarbageMultiplier *= (1.0f - percentageTrashFood); // We don't need to modify any aside generic, as we just remove the food pile othersise;
         }
 
+        if ( bioplastic ) {
+            genericGarbageMultiplier *= 1.0f - percentageTrashPlastic;
+        }
+
         if ( recycling ) {
-            // Note, we are treating composting as separate from recycling!!
+
             // All the following recycling statistics come from here
             // https://archive.epa.gov/epawaste/nonhaz/municipal/web/html/
-            genericGarbageMultiplier *= (1.0f - (.343f - percentageTrashFood)); // This is only recycling, not composting!! 
-
+            if (composting) {
+                genericGarbageMultiplier *= (1.0f - ((.343f + percentageTrashFood) - (.343f * .28f))); // This is only recycling, not composting!! 
+            } else if ( composting && bioplastic ) {
+                genericGarbageMultiplier *= (1.0f - ((.343f + percentageTrashPlastic + percentageTrashFood) - (.343f * .13f)) - (.343f * .28f)); 
+            } else if ( bioplastic ) {
+                genericGarbageMultiplier *= (1.0f - ((.343f + percentageTrashPlastic) - (.343f * .13f)));
+            }
+            else {
+                genericGarbageMultiplier *= (1.0f - (.343f));
+            }
            
-            woodMultiplier *= (1.0f - (.343f*.63f));
-            // We include composting in this figure because source data does, and we are only calculating how much wood is reduced, so that we aren't actually enavling composting in this instance has no effect.
+            woodMultiplier *= (1.0f - (.343f*.60f));
             metalMultiplier *= (1.0f - (.343f * .09f));
             plasticMultiplier *= (1.0f - (.343f * .13f));
+            foodMultiplier *= (1.0f - (.343f * .28f)); //Hmm this, one is a bit off, need to revist it.
             otherMultiplier *= (1.0f - (.343f * .17f));
 
         }
@@ -98,6 +110,7 @@ public class OverallPileSizeManager : MonoBehaviour {
     public ResizeAMeScript genericTrashResizer;
     public bool composting;
     public bool recycling;
+    public bool bioplastic;
 
     private float GetTimeMultiplier() {
         TimeIntervals time = currentTimeIntervalHolder.currentTimeInterval;
