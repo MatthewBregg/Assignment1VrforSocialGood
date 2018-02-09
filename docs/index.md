@@ -11,4 +11,5 @@
 ## Screenshots of the signs
 
 # Credits to models used
-[Credit Document](../credits.txt)
+[Credit Document](../credits.md)
+
