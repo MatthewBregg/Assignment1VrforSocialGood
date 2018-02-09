@@ -1,9 +1,30 @@
 
 # Technology used
 
+Unity, and Android cardboard
+
 # Link to youtube video 
 
 # Description
+The idea is to show people how much trash we produce, as if they are really looking at it.
+Similar to how seeing a large tree cut down actually reduces paper usage, hopefully actually seeing the trash produced will reduce trash output. VR enables seeing the pile as if it was really there in real life, which should give have more of an impact on a person than just a normal video game.
+
+Hopefully, someone will walk away from this thinking, "wow, that's a lot of trash, the pile is as big as I am!" and then
+reduce trash via recycling, composting, or reducing consumption in general.
+
+Additionally, to add more depth, recycling, composting, and only using recyclable plastics are options, and you can see how these relatively easy tasks reduce the trash pile.
+
+Finally, the trash pile can be broken down into its components.
+
+- Wood
+- Metal
+- Plastic
+- Food/Organic
+- Misc.
+
+This allows the player to compare say, the wood and plastic pile, and think about how their lifestyle and consumption reflects that. 
+
+
 ## Screenshot of the combined garbage pile
 
 ## Screenshot of the split garbage pile
@@ -44,7 +65,7 @@
 
 
 
-## Trash statsm
+## Trash stats
 
 - https://archive.epa.gov/epawaste/nonhaz/municipal/web/html/
 
