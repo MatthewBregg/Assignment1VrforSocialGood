@@ -1,7 +1,7 @@
 
 # Technology used
 
-Unity, and Android cardboard
+Unity, and Google cardboard
 
 # Link to youtube video 
 
