@@ -75,3 +75,11 @@ This allows the player to compare say, the wood and plastic pile, and think abou
 - garbage weight to volume
 - https://www.aqua-calc.com/calculate/volume-to-weight
 
+## Source Code
+https://github.com/MatthewBregg/Assignment1VrforSocialGood
+
+## APK Download
+https://github.com/MatthewBregg/Assignment1VrforSocialGood/blob/master/assignment1.apk
+
+- Note, I had my email set to my friends email when committing, hence why Reid Gill shows up as the commit name.
+
