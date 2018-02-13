@@ -4,6 +4,7 @@
 Unity, and Google cardboard
 
 # Link to youtube video 
+https://www.youtube.com/watch?v=pbpd6gjkCDE&feature=youtu.be
 
 # Description
 The idea is to show people how much trash we produce, as if they are really looking at it.
@@ -26,10 +27,11 @@ This allows the player to compare say, the wood and plastic pile, and think abou
 
 
 ## Screenshot of the combined garbage pile
-
+![Combined pile of trash](https://i.imgur.com/67xMibq.jpg)
 ## Screenshot of the split garbage pile
-
+![Split pile of trash](https://i.imgur.com/aU4bcsI.jpg)
 ## Screenshots of the signs
+![Signs](https://i.imgur.com/k6LZdXY.jpg)
 
 # Credits/Sources
 
