@@ -5,8 +5,8 @@ Unity, and Google cardboard
 
 # Link to youtube video 
 
+https://youtu.be/e9caD6yVfHc
 
-https://www.youtube.com/watch?v=etlnypKKCBc&feature=youtu.be
 
 # Description
 The idea is to show people how much trash we produce, as if they are really looking at it.
