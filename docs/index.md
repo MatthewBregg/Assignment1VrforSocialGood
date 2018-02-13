@@ -7,6 +7,10 @@ Unity, and Google cardboard
 
 https://youtu.be/e9caD6yVfHc
 
+Note: The audio clips are playing from the VR video.
+For some reason when recording my phone screen, it recorded the microphone in instead of loopback, and the microphone picked up the speaker out.
+Oh well.
+
 
 # Description
 The idea is to show people how much trash we produce, as if they are really looking at it.
